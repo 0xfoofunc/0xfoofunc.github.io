@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title and page.title != site.title %}{{ page.title }} | {{ site.title | upcase }}{% else %}{{ site.title | upcase }}{% endif %}</title>
+    
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <div class="center">
+     
+        {% if page.url == "/" %}
+        <h1>{{ site.title | upcase }}</h1>
+        <span id="username">@{{ site.username }}</span>
+        {% else %}
+        
+        {% if page.title %}
+        <p><b>{{ page.title }}</b></p>
+        {% endif %}
+        {% endif %}
+        
+        {{ content }}
+      
+    <footer>
+            <i><span id="copyright">&copy; <span id="current-year"></span> Arunesh. All rights reserved.</span></i>
+        </footer>
+
+        <script>
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+        </script>
+    </div>
+  </body>
+</html>

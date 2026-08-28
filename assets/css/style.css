@@ -1,0 +1,61 @@
+.text-center { 
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+h1 { 
+    font-size: 16px; 
+    margin: 0; 
+}
+
+#username, #copyright {
+    font-size: 12px;
+}
+
+#my_age { 
+    font-size: 14px; 
+}
+
+.center { 
+    max-width: 650px; 
+    margin: 40px auto 40px auto;
+}
+
+.center p { 
+    font-size: 14px; 
+    text-align: justify; 
+}
+
+a { 
+    font-size: 14px; 
+    text-decoration: none; 
+    color: #00E; 
+}
+
+ol { 
+    font-size: 14px; 
+    line-height: 1.8; 
+    margin-top: 6px; 
+    text-align: justify; 
+}
+
+.dt_text { 
+    margin: 0; 
+}
+
+.justify_center { 
+    justify-content: center; 
+}
+
+pre, code {
+    white-space: pre-wrap;
+    word-break: break-all;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 580px) {
+    .center { 
+        padding: 0 16px; 
+        margin: 25px auto 25px auto;
+    }
+}
