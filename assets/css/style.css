@@ -1,0 +1,53 @@
+body {
+    font-size: 14px;
+}
+
+h1 { 
+    font-size: 16px; 
+    margin: 0; 
+}
+
+#username, #copyright {
+    font-size: 12px;
+}
+
+#my_age { 
+    font-size: 14px; 
+}
+
+.center { 
+    max-width: 650px; 
+    margin: 40px auto;
+}
+
+.center p, ol { 
+    text-align: justify; 
+}
+
+ol { 
+    line-height: 1.8; 
+    margin-top: 6px; 
+}
+
+a { 
+    text-decoration: none; 
+    color: #00E; 
+}
+
+pre, code {
+    font-size: initial;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    white-space: pre-wrap;
+    word-break: break-all;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+@media only screen and (max-width: 580px) {
+    .center { 
+        padding: 0 16px; 
+        margin: 25px auto;
+    }
+}
