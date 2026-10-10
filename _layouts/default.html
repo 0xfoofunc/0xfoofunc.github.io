@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="preload" href="{{ '/assets/font/times_new_roman/times.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ '/assets/font/times_new_roman/timesi.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ '/assets/font/times_new_roman/timesbd.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ '/assets/font/times_new_roman/timesbi.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script src="{{ '/assets/js/font.js' | relative_url }}" defer></script>
+    {%- if content contains "<pre" %}
+    <link rel="stylesheet" href="{{ '/assets/css/highlight.css' | relative_url }}">
+    {%- endif %}
+</head>
+<body>
+    <div class="center">
+        {% if page.url == "/" %}
+            <h2>{{ site.title }}</h2>
+            <span id="username">@{{ site.username }}</span>
+        {% elsif page.title %}
+            <h2>{{ page.title }}</h2>
+        {% endif %}
+
+        {{ content | replace: "<img ", '<img loading="lazy" decoding="async" ' }}
+
+        <footer>
+           <i><span id="copyright">&copy; {{ 'now' | date: "%Y" }} Arunesh. All rights reserved.</span></i>
+        </footer>
+    </div>
+    {% if page.url == "/" %}
+        <script src="{{ '/assets/js/age.js' | relative_url }}" defer></script>
+    {% endif %}
+</body>
+</html>

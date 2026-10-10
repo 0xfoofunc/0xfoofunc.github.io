@@ -1,0 +1,52 @@
+.highlight .c, .highlight .ch, .highlight .cm, .highlight .cp,
+.highlight .cpf, .highlight .c1, .highlight .gh, .highlight .gp {
+    color: #000080;
+}
+
+.highlight .k, .highlight .kc, .highlight .kn, .highlight .kp,
+.highlight .kr, .highlight .m, .highlight .mb, .highlight .mf,
+.highlight .mh, .highlight .mi, .highlight .mo, .highlight .il,
+.highlight .nb, .highlight .bp, .highlight .ow, .highlight .gu {
+    color: #800080;
+}
+
+.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc,
+.highlight .dl, .highlight .sd, .highlight .s2, .highlight .se,
+.highlight .sh, .highlight .si, .highlight .sx, .highlight .sr,
+.highlight .s1, .highlight .ss, .highlight .cs, .highlight .gd {
+    color: #cd0000;
+}
+
+.highlight .kd, .highlight .kt, .highlight .gi {
+    color: #008000;
+}
+
+.highlight .nc, .highlight .nv, .highlight .vc, .highlight .vg,
+.highlight .vi, .highlight .vm {
+    color: #008b8b;
+}
+
+.highlight .err {
+    color: #cd0000;
+    border: 1px solid red;
+}
+
+.highlight .o {
+    color: #2080b0;
+}
+
+.highlight .gr {
+    color: red;
+}
+
+.highlight .go {
+    color: #666666;
+}
+
+.highlight .ne {
+    color: #666699;
+}
+
+.highlight .gt {
+    color: #0044dd;
+}

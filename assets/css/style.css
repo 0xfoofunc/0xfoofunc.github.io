@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Times New Roman';
+    src: local('Times New Roman'), url('/assets/font/times_new_roman/times.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: local('Times New Roman Italic'), url('/assets/font/times_new_roman/timesi.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: local('Times New Roman Bold'), url('/assets/font/times_new_roman/timesbd.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: local('Times New Roman Bold Italic'), url('/assets/font/times_new_roman/timesbi.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: block;
+}
+
+body {
+    font-family: 'Times New Roman';
+    visibility: hidden;
+}
+
+body.fonts-ready {
+    visibility: visible;
+}
+
+h2 {
+    margin: 0;
+}
+
+a {
+    color: #00e;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1em auto;
+}
+
+.center {
+    width: min(100% - 32px, 650px);
+    margin: 1em auto;
+}
+
+.center p,
+.center ol {
+    text-align: justify;
+}
+
+#username,
+#copyright {
+font-size: 14px;
+}
+
+#my_age {
+display: inline-block;
+width: 11.5ch;
+}
+
+.post-date {
+    display: inline-block;
+    width: 10ch;
+}
+
+ol {
+    margin-top: 6px;
+    line-height: 1.8;
+}
+
+.post-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+table {
+    width: 100%;
+    margin: 1em 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    padding: 8px 12px;
+    border: 1px solid #000;
+    text-align: center !important;
+    overflow-wrap: anywhere;
+}
+
+table td:first-child,
+table td:first-child * {
+    font-weight: normal !important;
+}
+
+pre {
+    margin: 1em 0;
+    padding: 0;
+    text-align: left;
+    white-space: pre;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+pre::-webkit-scrollbar {
+    display: none;
+}
+
+pre code {
+    tab-size: 4;
+}
