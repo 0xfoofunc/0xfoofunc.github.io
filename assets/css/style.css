@@ -1,42 +1,53 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
 @font-face {
     font-family: 'Times New Roman';
-    src: local('Times New Roman'), url('/assets/font/times_new_roman/times.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    src: local('Times New Roman'),
+         url('/assets/font/times_new_roman/times.woff2') format('woff2');
     font-display: block;
 }
 
 @font-face {
     font-family: 'Times New Roman';
-    src: local('Times New Roman Italic'), url('/assets/font/times_new_roman/timesi.woff2') format('woff2');
-    font-weight: normal;
+    src: local('Times New Roman Italic'),
+         url('/assets/font/times_new_roman/timesi.woff2') format('woff2');
     font-style: italic;
     font-display: block;
 }
 
 @font-face {
     font-family: 'Times New Roman';
-    src: local('Times New Roman Bold'), url('/assets/font/times_new_roman/timesbd.woff2') format('woff2');
+    src: local('Times New Roman Bold'),
+         url('/assets/font/times_new_roman/timesbd.woff2') format('woff2');
     font-weight: bold;
-    font-style: normal;
     font-display: block;
 }
 
 @font-face {
     font-family: 'Times New Roman';
-    src: local('Times New Roman Bold Italic'), url('/assets/font/times_new_roman/timesbi.woff2') format('woff2');
+    src: local('Times New Roman Bold Italic'),
+         url('/assets/font/times_new_roman/timesbi.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
     font-display: block;
 }
+
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
 
 html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
 }
 
+/* Hidden until fonts load, to avoid a flash of fallback text */
 body {
-    font: 16px 'Times New Roman', serif;
+    font-family: 'Times New Roman', serif;
+    font-size: initial;
     visibility: hidden;
 }
 
@@ -60,13 +71,17 @@ img {
     margin: 1em auto;
 }
 
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
 .center {
     width: min(100% - 32px, 650px);
     margin: 1em auto;
 }
 
-.center p,
-.center ol {
+.center :is(p, ol) {
     text-align: justify;
 }
 
@@ -75,28 +90,49 @@ img {
     font-size: 14px;
 }
 
-#my_age,
-.post-date {
-    display: inline-block;
-}
-
+/* Fixed width so the live age counter doesn't shift the layout */
 #my_age {
+    display: inline-block;
     width: 11.5ch;
 }
 
-.post-date {
-    width: 10ch;
-}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
 
 ol {
     margin-top: 6px;
     line-height: 1.8;
 }
 
-.post-list {
-    padding-left: 0;
+/* Post list: date column + title column.
+   Wrapped titles line up under the title, not under the date. */
+.center .post-list {
+    padding: 0;
     list-style: none;
+    text-align: initial;
 }
+
+.post-list li {
+    display: flex;
+    align-items: baseline;
+}
+
+.post-date {
+    flex: 0 0 7.5em;      /* fits "09 Jan 2026 -"; widen to 8em if it clips */
+    white-space: nowrap;
+}
+
+.post-list a {
+    flex: 1;
+    min-width: 0;         /* lets long titles wrap inside their own column */
+}
+
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
 
 table {
     width: 100%;
@@ -115,12 +151,17 @@ td {
 
 td:first-child,
 td:first-child * {
-    font-weight: normal !important;
+    font-weight: initial !important;
 }
+
+
+/* ==========================================================================
+   Code
+   ========================================================================== */
 
 pre,
 code {
-    font-size: 16px;
+    font-size: initial;   /* browser default for monospace (~13px) */
 }
 
 pre {
