@@ -32,12 +32,11 @@
 
 html {
     -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
     text-size-adjust: 100%;
 }
 
 body {
-    font-family: 'Times New Roman';
+    font: 16px 'Times New Roman', serif;
     visibility: hidden;
 }
 
@@ -76,13 +75,16 @@ img {
     font-size: 14px;
 }
 
-#my_age {
+#my_age,
+.post-date {
     display: inline-block;
+}
+
+#my_age {
     width: 11.5ch;
 }
 
 .post-date {
-    display: inline-block;
     width: 10ch;
 }
 
@@ -111,26 +113,23 @@ td {
     overflow-wrap: anywhere;
 }
 
-table td:first-child,
-table td:first-child * {
+td:first-child,
+td:first-child * {
     font-weight: normal !important;
+}
+
+pre,
+code {
+    font-size: 16px;
 }
 
 pre {
     margin: 1em 0;
-    padding: 0;
-    text-align: left;
-    white-space: pre;
+    tab-size: 4;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
 pre::-webkit-scrollbar {
     display: none;
-}
-
-pre code {
-    tab-size: 4;
 }
