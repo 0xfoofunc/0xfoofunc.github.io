@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "inter-full";
+  src: url("/assets/fonts/inter-full.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+}
+
+@font-face {
+  font-family: "liberationmono-regular";
+  src: url("/assets/fonts/liberationmono-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 40.625em;
+  color: #ccc;
+  background-color: #111;
+  font-family: "inter-full";
+  font-weight: 450;
+  line-height: 1.7;
+  font-feature-settings: "liga" 1, "calt" 1, "cv05" 1;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  scroll-margin-top: 0.5em;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+:where(dl, ol, ul) :where(dl, ol, ul) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+hr {
+  box-sizing: content-box;
+  color: inherit;
+  height: 0;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+a {
+  color: #46a2ff;
+  text-decoration: none;
+}
+
+img,
+details,
+pre {
+  border-radius: 0.3125em;
+}
+
+img {
+  max-width: 100%;
+}
+
+blockquote,
+details,
+code,
+pre {
+  background-color: #2b2b2b;
+}
+
+blockquote {
+  margin: 0;
+  padding-left: 1em;
+  border-left: medium solid #555;
+}
+
+details {
+  padding: 0.5em 1em;
+}
+
+details > *:last-child {
+  margin-bottom: 0;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  text-indent: 0;
+  width: auto;
+  max-width: 100%;
+}
+
+th,
+td {
+  padding: 0.4em 0.6em;
+  border: thin solid #333;
+  overflow-wrap: normal;
+}
+
+th {
+  font-weight: bold;
+}
+
+code,
+.post-list-date,
+.post-date {
+  font-size: 0.9em;
+}
+
+code,
+.post-list-date {
+  font-family: "liberationmono-regular";
+  font-feature-settings: normal;
+}
+
+code:not(pre code) {
+  padding: 0.2em 0.25em 0.08em;
+  border-radius: 0.25em;
+}
+
+pre {
+  padding: 1em;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.post-list-wrapper {
+  padding: 0;
+}
+
+.post-list {
+  display: flex;
+  align-items: baseline;
+}
+
+.post-list-date {
+  flex: 0 0 10.5ch;
+}
+
+.post-list-title {
+  min-width: 0;
+}
+
+.post-date {
+  margin: 0.8em 0 1.2em;
+}

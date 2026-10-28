@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+<hgroup>
+  <h1>{{ page.title }}</h1>
+  <p class="post-date">
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%-d %b %Y" }}</time>
+  </p>
+</hgroup>
+
+{{ content }}
