@@ -1,0 +1,140 @@
+.highlight {
+  color: #d8dee9;
+}
+
+.highlight .p,
+.highlight .pm {
+  color: #eceff4;
+}
+
+.highlight .esc,
+.highlight .g,
+.highlight .l,
+.highlight .n,
+.highlight .x,
+.highlight .go,
+.highlight .ld,
+.highlight .nl,
+.highlight .nx,
+.highlight .py,
+.highlight .w,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm {
+  color: #d8dee9;
+}
+
+.highlight .c,
+.highlight .ch,
+.highlight .cm,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs,
+.highlight .sd {
+  color: #616e87;
+  font-style: italic;
+}
+
+.highlight .cp {
+  color: #5e81ac;
+  font-style: italic;
+}
+
+.highlight .k,
+.highlight .o,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kr,
+.highlight .kt,
+.highlight .ow {
+  color: #81a1c1;
+  font-weight: bold;
+}
+
+.highlight .kp,
+.highlight .nb,
+.highlight .nt,
+.highlight .bp {
+  color: #81a1c1;
+}
+
+.highlight .gh,
+.highlight .gu,
+.highlight .nf,
+.highlight .fm {
+  color: #88c0d0;
+  font-weight: bold;
+}
+
+.highlight .na,
+.highlight .nc,
+.highlight .no,
+.highlight .nn {
+  color: #8fbcbb;
+}
+
+.highlight .s,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .dl,
+.highlight .s2,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .s1,
+.highlight .ss,
+.highlight .gi {
+  color: #a3be8c;
+}
+
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il {
+  color: #b48ead;
+}
+
+.highlight .err,
+.highlight .gd,
+.highlight .gr,
+.highlight .gt,
+.highlight .ne {
+  color: #bf616a;
+}
+
+.highlight .nd,
+.highlight .ni {
+  color: #d08770;
+}
+
+.highlight .se,
+.highlight .sr {
+  color: #ebcb8b;
+}
+
+.highlight .ge {
+  color: #d8dee9;
+  font-style: italic;
+}
+
+.highlight .gs {
+  color: #d8dee9;
+  font-weight: bold;
+}
+
+.highlight .ges {
+  color: #d8dee9;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.highlight .gp {
+  color: #616e88;
+  font-weight: bold;
+}
